@@ -1,0 +1,205 @@
+{
+    "data": {
+      "races": {
+        "response": [
+          {
+            "date": "2023-11-26T13:00:00Z",
+            "distance": "307.6 Kms",
+            "id": 1781,
+            "season": 2023,
+            "status": "Completed",
+            "timezone": "utc",
+            "type": "Race",
+            "weather": null,
+            "competition": {
+              "location": {
+                "country": "Abu Dhabi"
+              },
+              "id": 23,
+              "name": "Abu Dhabi Grand Prix"
+            },
+            "circuit": {
+              "id": 23,
+              "image": "https://media.api-sports.io/formula-1/circuits/23.png",
+              "name": "Yas Marina Circuit"
+            },
+            "fastest_lap": {
+              "driver": {
+                "id": 25
+              },
+              "time": "1:26.993"
+            }
+          },
+          {
+            "date": "2023-11-25T14:00:00Z",
+            "distance": null,
+            "id": 1782,
+            "season": 2023,
+            "status": "Completed",
+            "timezone": "utc",
+            "type": "1st Qualifying",
+            "weather": null,
+            "competition": {
+              "location": {
+                "country": "Abu Dhabi"
+              },
+              "id": 23,
+              "name": "Abu Dhabi Grand Prix"
+            },
+            "circuit": {
+              "id": 23,
+              "image": "https://media.api-sports.io/formula-1/circuits/23.png",
+              "name": "Yas Marina Circuit"
+            },
+            "fastest_lap": {
+              "driver": {
+                "id": null
+              },
+              "time": null
+            }
+          },
+          {
+            "date": "2023-11-25T10:30:00Z",
+            "distance": null,
+            "id": 1783,
+            "season": 2023,
+            "status": "Completed",
+            "timezone": "utc",
+            "type": "3rd Practice",
+            "weather": null,
+            "competition": {
+              "location": {
+                "country": "Abu Dhabi"
+              },
+              "id": 23,
+              "name": "Abu Dhabi Grand Prix"
+            },
+            "circuit": {
+              "id": 23,
+              "image": "https://media.api-sports.io/formula-1/circuits/23.png",
+              "name": "Yas Marina Circuit"
+            },
+            "fastest_lap": {
+              "driver": {
+                "id": null
+              },
+              "time": null
+            }
+          },
+          {
+            "date": "2023-11-24T13:00:00Z",
+            "distance": null,
+            "id": 1784,
+            "season": 2023,
+            "status": "Completed",
+            "timezone": "utc",
+            "type": "2nd Practice",
+            "weather": null,
+            "competition": {
+              "location": {
+                "country": "Abu Dhabi"
+              },
+              "id": 23,
+              "name": "Abu Dhabi Grand Prix"
+            },
+            "circuit": {
+              "id": 23,
+              "image": "https://media.api-sports.io/formula-1/circuits/23.png",
+              "name": "Yas Marina Circuit"
+            },
+            "fastest_lap": {
+              "driver": {
+                "id": null
+              },
+              "time": null
+            }
+          },
+          {
+            "date": "2023-11-24T09:30:00Z",
+            "distance": null,
+            "id": 1785,
+            "season": 2023,
+            "status": "Completed",
+            "timezone": "utc",
+            "type": "1st Practice",
+            "weather": null,
+            "competition": {
+              "location": {
+                "country": "Abu Dhabi"
+              },
+              "id": 23,
+              "name": "Abu Dhabi Grand Prix"
+            },
+            "circuit": {
+              "id": 23,
+              "image": "https://media.api-sports.io/formula-1/circuits/23.png",
+              "name": "Yas Marina Circuit"
+            },
+            "fastest_lap": {
+              "driver": {
+                "id": null
+              },
+              "time": null
+            }
+          },
+          {
+            "date": "2023-11-25T14:42:00Z",
+            "distance": null,
+            "id": 1855,
+            "season": 2023,
+            "status": "Completed",
+            "timezone": "utc",
+            "type": "3rd Qualifying",
+            "weather": null,
+            "competition": {
+              "location": {
+                "country": "Abu Dhabi"
+              },
+              "id": 23,
+              "name": "Abu Dhabi Grand Prix"
+            },
+            "circuit": {
+              "id": 23,
+              "image": "https://media.api-sports.io/formula-1/circuits/23.png",
+              "name": "Yas Marina Circuit"
+            },
+            "fastest_lap": {
+              "driver": {
+                "id": null
+              },
+              "time": null
+            }
+          },
+          {
+            "date": "2023-11-25T14:21:00Z",
+            "distance": null,
+            "id": 1856,
+            "season": 2023,
+            "status": "Completed",
+            "timezone": "utc",
+            "type": "2nd Qualifying",
+            "weather": null,
+            "competition": {
+              "location": {
+                "country": "Abu Dhabi"
+              },
+              "id": 23,
+              "name": "Abu Dhabi Grand Prix"
+            },
+            "circuit": {
+              "id": 23,
+              "image": "https://media.api-sports.io/formula-1/circuits/23.png",
+              "name": "Yas Marina Circuit"
+            },
+            "fastest_lap": {
+              "driver": {
+                "id": null
+              },
+              "time": null
+            }
+          }
+        ],
+        "errors": []
+      }
+    }
+  }

@@ -2,6 +2,7 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { ActivityIndicator } from "react-native";
 import { Colors } from "../Constants/Colors";
+import { StatusBar } from "expo-status-bar";
 
 
 export default function RootLayout() {
@@ -20,20 +21,24 @@ export default function RootLayout() {
     
 
     return (    
-        <Stack 
-        screenOptions={{
-            headerStyle: { backgroundColor: Colors.primary },
-            headerTitleStyle: { 
-                color: 'whitesmoke',
-                fontFamily: 'F1-Bold'
-            },
-            headerTintColor: 'whitesmoke'
-        }}
-        >
-            <Stack.Screen 
-            name="index"
-            options={{ title: 'Racing Car' }}
-            />
-        </Stack>
+        <>
+            <Stack
+                screenOptions={{
+                    headerStyle: { backgroundColor: Colors.primary },
+                    headerTitleStyle: {
+                        color: 'whitesmoke',
+                        fontFamily: 'F1-Bold'
+                    },
+                    headerTintColor: 'whitesmoke'
+                }}
+            >
+                <Stack.Screen
+                    name="index"
+                    options={{ title: 'Racing Car' }}
+                />
+            </Stack>
+
+            <StatusBar style="light" />
+        </>
     )
 }

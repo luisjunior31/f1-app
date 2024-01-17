@@ -25,7 +25,12 @@ export default function RaceLayout() {
             height: 5
          }
         }}
-         />
+         >
+            <TopTabs.Screen 
+            name="index"
+            options={{ title: "Detail" }}
+            />
+         </TopTabs>
         </>
     )
 }

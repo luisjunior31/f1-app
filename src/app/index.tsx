@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import {  FlatList,  StyleSheet, View } from 'react-native';
 import racesRes from '../../assets/data/races.json'
 import RaceListItem from '../components/RaceListItem';
@@ -24,7 +23,6 @@ export default function HomeScreen() {
          <RaceListItem item={item} round={sortedRace.length - index} />
       )}
       />
-      <StatusBar style="auto" />
     </View>
   );
 }

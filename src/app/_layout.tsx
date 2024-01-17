@@ -1,6 +1,7 @@
 import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { ActivityIndicator } from "react-native";
+import { Colors } from "../Constants/Colors";
 
 
 export default function RootLayout() {
@@ -19,6 +20,20 @@ export default function RootLayout() {
     
 
     return (    
-        <Stack />
+        <Stack 
+        screenOptions={{
+            headerStyle: { backgroundColor: Colors.primary },
+            headerTitleStyle: { 
+                color: 'whitesmoke',
+                fontFamily: 'F1-Bold'
+            },
+            headerTintColor: 'whitesmoke'
+        }}
+        >
+            <Stack.Screen 
+            name="index"
+            options={{ title: 'Racing Car' }}
+            />
+        </Stack>
     )
 }

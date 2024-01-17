@@ -3,7 +3,7 @@ import {  FlatList,  StyleSheet, View } from 'react-native';
 import racesRes from '../../assets/data/races.json'
 import RaceListItem from '../components/RaceListItem';
 import dayjs from "dayjs";
-import { Link } from 'expo-router';
+import { Link, Stack } from 'expo-router';
 
 
 const races = racesRes.data.races.response

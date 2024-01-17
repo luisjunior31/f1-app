@@ -1,14 +1,55 @@
-import { View, Text, FlatList } from 'react-native'
+import { Text, FlatList, ActivityIndicator } from 'react-native'
 import React from 'react'
-import raceRankingResponse from '../../../../assets/data/race-rankings.json'
 import RankingListItem from '../../../components/RankingListItem'
+import { useGlobalSearchParams } from 'expo-router'
+import { gql, useQuery } from '@apollo/client'
 
-const raceRanking = raceRankingResponse.data.raceRankings.response
+
+const query = gql`
+  query MyQuery($id: String!) {
+  raceRankings(race: $id) {
+    response {
+      position
+      time
+      team {
+        id
+        name
+      }
+      driver {
+        id
+        image
+        name
+      }
+    }
+  }
+}
+`
 
 const RaceRaking = () => {
+
+  const { id } = useGlobalSearchParams()
+
+  const { data, loading } = useQuery(query, {
+    variables: { id: String(id) }
+  })
+
+
+  if (loading) {
+    return <ActivityIndicator />
+  }
+
+
+  const raceRankings = data?.raceRankings?.response 
+
+  console.log(data)
+
+  if (!raceRankings) {
+    return <Text>sorry is some wrong!!</Text>
+  }
+
   return (
    <FlatList
-   data={raceRanking}
+   data={raceRankings}
    renderItem={({ item }) => 
    <RankingListItem item={item} />
   }

@@ -1,14 +1,52 @@
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Text, Image, StyleSheet, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { useLocalSearchParams } from 'expo-router'
-import raceResponse from '../../../../assets/data/race.json'
+import { gql, useQuery } from '@apollo/client'
 
 
-const race = raceResponse.data.races.response[0]
+const query = gql`
+  query MyQuery($season: String, $competition: String) {
+  races(season: $season, competition: $competition) {
+    response {
+      id
+      date
+      season
+      circuit {
+        id
+        image
+        name
+      }
+      competition {
+        name
+        location {
+          country
+        }
+      }
+    }
+  }
+}
+`
+
 
 const RaceDetail = () => {
 
   const { id } = useLocalSearchParams()
+
+  const { data, loading } = useQuery(query, {
+    variables: { id: id }
+  })
+
+
+  if (loading) {
+    return <ActivityIndicator />
+  }
+
+  const race = data.races.response[0]
+
+  if (!race) {
+    return <Text>race not founded!!</Text>
+  }
+
 
   return (
     <View style={styles.page}>
